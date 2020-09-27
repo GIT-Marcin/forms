@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'forms';
+
+  user: {firstName: String; password: String } = {
+    firstName: '',
+    password: '',
+  };
+
+  onSubmit(): void {
+
+    console.log(this.user);
+  }
 }
